@@ -1,6 +1,6 @@
 # functions-from-zero-1
 [![Codespaces Prebuilds](https://github.com/jithsg/functions-from-zero-1/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/jithsg/functions-from-zero-1/actions/workflows/codespaces/create_codespaces_prebuilds)
-
+[![CI](https://github.com/jithsg/functions-from-zero-1/actions/workflows/main.yml/badge.svg)](https://github.com/jithsg/functions-from-zero-1/actions/workflows/main.yml)
 ##Step 1. Configure Development Environment
 *Configure github codespace, aws cloud9
 *Create a scaffold for structure of project: 'Makefile', 'requirements.txt'
