@@ -1,6 +1,9 @@
-x = 1
-y = 2
-import ipdb
+# create a hello world function using fstrings
+def hello(name):
+    return f"Hello {name}!"
 
-ipdb.set_trace()
-print(x + y)
+
+if __name__ == "__main__":
+    print(hello("world"))
+    print(hello("Corey"))
+    print(hello("Python"))

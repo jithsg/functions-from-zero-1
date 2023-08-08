@@ -5,3 +5,4 @@ pytest-cov
 black
 ipython
 ipdb
+fire
