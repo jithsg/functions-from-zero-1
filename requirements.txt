@@ -6,3 +6,6 @@ black
 ipython
 ipdb
 fire
+uvicorn
+fastapi
+httpx
