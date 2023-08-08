@@ -1,0 +1,7 @@
+#populate from makefile
+pylint
+pytest
+pytest-cov
+black
+ipython
+ipdb
