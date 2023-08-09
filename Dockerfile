@@ -1,15 +1,19 @@
 # Use the official Python image from the Docker Hub
 # Use the official Python image from the Docker Hub
+# Use the official Python image from the Docker Hub
 FROM python:3.8-slim-buster
 
-# Set the working directory inside the container
+# Set the working directory inside the container. Creates /app if it doesn't exist.
 WORKDIR /app
 
-# Install FastAPI and Uvicorn
-RUN pip install fastapi uvicorn
+# Copy the requirements.txt file into the container
+COPY . /app
 
-# Copy your local `app.py` file to the container
-COPY ./app.py /app.py
+# Install the packages listed in requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
+
+# Copy your local `app.py` file to the container's working directory
+
 
 # Command to run the application using Uvicorn
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
